@@ -134,7 +134,7 @@ def write_duration_csv(data: list[dict]) -> None:
 
 
 if __name__ == "__main__":
-    csv_generator = read_csv('~/CSV-to-train-times/test.csv')
+    csv_generator = read_csv('./test.csv')
     dict_list = make_dicts(csv_generator)
     pages = asyncio.run(a_main(dict_list))
     write_duration_csv(pages)
